@@ -1,8 +1,8 @@
 class Node(object):
-    def __init__(self, index):
+    def __init__(self, index, linked_nodes_index):
         self.index = index
 
-        self.linked_nodes_index = []
+        self.linked_nodes_index = linked_nodes_index
         self.distance = float("inf")
         self.prev = -1
 
@@ -21,10 +21,29 @@ class Graph(object):
     def __init__(self):
         self.nodes = []
 
-        self.first_node = Node(0)
-        self.first_node.distance = 0
+    def add_node(self, index, linked_nodes_index):
+        node = Node(index, linked_nodes_index)
 
-        self.nodes.append(self.first_node)
+        if index == 0:
+            node.distance = 0
+
+        self.nodes.append(node)
+
+    def add_nodes_from_file(self, nodes):
+        index = 0
+
+        for line in nodes:
+            data = line.split()
+
+            linked_nodes_index = []
+            i = 0
+
+            while i < data.__len__() and data[i] != '-1':
+                linked_nodes_index.append([int(data[i]), int(data[i + 1])])
+                i += 2
+
+            self.add_node(index, linked_nodes_index)
+            index += 1
 
     def dijkstra(self):
         while self.open_nodes() is not None:
@@ -50,3 +69,16 @@ class Graph(object):
                 min_distance = node.distance
 
         return min_node
+
+
+def main():
+    graph = Graph()
+
+    with open("nodes.txt") as nodes:
+        graph.add_nodes_from_file(nodes)
+
+    graph.dijkstra()
+
+
+if __name__ == "__main__":
+    main()

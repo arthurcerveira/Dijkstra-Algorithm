@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ed4351a-be4d-4fc0-9ce6-7aa767bfebc4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nodes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dijkstra_algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/dijkstra_algorithm.py" afterDir="false" />
     </list>
@@ -88,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1567354673162</updated>
-      <workItem from="1567354674318" duration="12058000" />
+      <workItem from="1567354674318" duration="17100000" />
     </task>
     <servers />
   </component>
@@ -118,6 +117,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Dijkstra$dijkstra_algorithm.coverage" NAME="dijkstra_algorithm Coverage Results" MODIFIED="1567378021756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Dijkstra$dijkstra_algorithm.coverage" NAME="dijkstra_algorithm Coverage Results" MODIFIED="1567455093745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -76,7 +76,7 @@ class Graph(object):
 
         return min_node
 
-    def show_path(self, node_index):
+    def min_path(self, node_index):
         path = []
         node = self.nodes[node_index]
 
@@ -99,7 +99,8 @@ def main():
     graph.dijkstra()
 
     for n in graph.nodes:
-        print("Best path to node " + n.index.__str__() + ": \n" + graph.show_path(n.index).__str__())
+        print("Best path to node " + n.index.__str__() +
+              ": \n" + graph.min_path(n.index).__str__())
 
 
 if __name__ == "__main__":
